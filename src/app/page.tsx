@@ -1,0 +1,31 @@
+import Blog from '@/component/Blog';
+import Client from '@/component/Client';
+import Contact from '@/component/Contact';
+import Cta from '@/component/Cta';
+import Footer from '@/component/layout/Footer/page';
+import Topbar from '@/component/layout/Topbar/page';
+import Portfolio from '@/component/Portfolio';
+import Pricing from '@/component/Pricing';
+import Team from '@/component/Team';
+import Welcome from '@/component/Welcome';
+import Hero from './components/Hero';
+
+const Page = () => {
+  return (
+    <>
+      <Topbar />
+      <Hero />
+      <Welcome />
+      <Portfolio />
+      <Client />
+      <Pricing />
+      <Team />
+      <Cta />
+      <Blog />
+      <Contact />
+      <Footer />
+    </>
+  );
+};
+
+export default Page;
