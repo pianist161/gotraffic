@@ -4,13 +4,12 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import HomeBg from '@/assets/images/home/home-bg.jpg';
 import HomeBg2 from '@/assets/images/home/home-bg-2.jpg';
-import HomeBg3 from '@/assets/images/home/home-bg-3.jpg';
 import { StaticImageData } from 'next/image';
 import useBootstrap from '@/hooks/useBootstrap';
 
 type HeroBgImage = StaticImageData;
 
-const heroBgImages: HeroBgImage[] = [HomeBg3, HomeBg2, HomeBg];
+const heroBgImages: HeroBgImage[] = [HomeBg2, HomeBg];
 
 const Hero = () => {
   useBootstrap();
