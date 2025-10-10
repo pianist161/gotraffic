@@ -5,14 +5,14 @@ import { Col, Container, Row } from 'react-bootstrap';
 import Image, { StaticImageData } from 'next/image';
 import Link from 'next/link';
 
-import img1 from '@/assets/images/portfolio/work-1.jpg';
-import img2 from '@/assets/images/portfolio/work-8.jpg';
-import img3 from '@/assets/images/portfolio/work-3.jpg';
-import img4 from '@/assets/images/portfolio/work-2.jpg';
-import img5 from '@/assets/images/portfolio/work-6.jpg';
-import img6 from '@/assets/images/portfolio/work-5.jpg';
-import img7 from '@/assets/images/portfolio/work-7.jpg';
-import img8 from '@/assets/images/portfolio/work-4.jpg';
+import img1 from '@/assets/images/portfolio/pic_1.png';
+import img2 from '@/assets/images/portfolio/pic_2.png';
+import img3 from '@/assets/images/portfolio/pic_3.png';
+import img4 from '@/assets/images/portfolio/pic_4.png';
+import img5 from '@/assets/images/portfolio/pic_5.png';
+import img6 from '@/assets/images/portfolio/pic_6.png';
+import img7 from '@/assets/images/portfolio/pic_7.png';
+import img8 from '@/assets/images/portfolio/pic_8.png';
 
 type PortfolioItem = {
   id: number;
@@ -20,7 +20,7 @@ type PortfolioItem = {
   alt: string;
   categories: string[];
   title: string;
-  client: string;
+  
 };
 
 const portfolioData: PortfolioItem[] = [
@@ -28,62 +28,69 @@ const portfolioData: PortfolioItem[] = [
     id: 1,
     img: img1,
     alt: '1',
-    categories: ['profile', 'business'],
-    title: 'Centerd Gallary',
-    client: 'Kay Garland',
+    categories: ['signals', 'systems'],
+    title: 'Traffic Signal Systems',
+  
   },
   {
     id: 2,
     img: img2,
     alt: '2',
-    categories: ['business', 'finance'],
-    title: 'Sidebar Stack',
-    client: 'Kay Garland',
+    categories: ['its', 'technology'],
+    title: 'ITS Project Support',
+    
   },
   {
     id: 3,
     img: img3,
     alt: '3',
-    categories: ['profile', 'business'],
-    title: 'Grid – Overlay',
-    client: 'Kay Garland',
+    categories: ['studies', 'analysis'],
+    title: 'Traffic Engineering Studies',
+   
   },
   {
     id: 4,
     img: img4,
     alt: '4',
-    categories: ['marketing'],
-    title: 'Distinctive',
-    client: 'Kay Garland',
+    categories: ['safety', 'optimization'],
+    title: 'TSM&O & Safety Studies',
+    
   },
   {
     id: 5,
     img: img5,
     alt: '5',
-    categories: ['finance', 'marketing'],
-    title: 'Sustainable',
-    client: 'Kay Garland',
+    categories: ['adaptive', 'control'],
+    title: 'Adaptive Signal Control',
+   
   },
   {
     id: 6,
     img: img6,
     alt: '6',
-    categories: ['profile', 'marketing'],
-    title: 'Popup Hover',
-    client: 'Kay Garland',
+    categories: ['database', 'migration'],
+    title: 'Signal Controller Database',
+
   },
-  { id: 7, img: img7, alt: '7', categories: ['business'], title: 'Vendor', client: 'Kay Garland' },
+  { 
+    id: 7, 
+    img: img7, 
+    alt: '7', 
+    categories: ['simulation'], 
+    title: 'Traffic Simulation', 
+ 
+  },
   {
     id: 8,
     img: img8,
     alt: '8',
-    categories: ['marketing'],
-    title: 'Slider Cover',
-    client: 'Kay Garland',
+    categories: ['planning', 'design'],
+    title: 'Traffic Engineering Support for PD&E & Design Projects',
+    
   },
 ];
 
-const filters = ['*', 'profile', 'business', 'finance', 'marketing'];
+const filters = ['*', 'signals', 'its', 'studies', 'safety', 'adaptive', 'database', 'simulation', 'planning'];
 
 const Portfolio = () => {
   const [filterKey, setFilterKey] = useState('*');
@@ -125,10 +132,10 @@ const Portfolio = () => {
         <Row className="justify-content-center">
           <Col lg={6}>
             <div className="text-center">
-              <h4 className="title-heading text-uppercase">Our Portfolio</h4>
+              <h4 className="title-heading text-uppercase">Our Services</h4>
               <p className="title-desc text-muted mt-3">
-                Huge collection of elements, rich customization options, flexible layouts, stunning
-                pages and instant results!
+                Comprehensive traffic engineering solutions including signal systems, ITS deployment, 
+                and advanced traffic management technologies for South Florida and beyond.
               </p>
             </div>
           </Col>
@@ -165,7 +172,6 @@ const Portfolio = () => {
                   <div className="item-mask">
                     <div className="item-caption">
                       <h5 className="text-dark">{item.title}</h5>
-                      <p className="text-muted">client: {item.client}</p>
                     </div>
                   </div>
                 </Link>

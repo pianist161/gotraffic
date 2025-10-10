@@ -10,9 +10,7 @@ const sections = [
   { id: 'home', label: 'Home' },
   { id: 'service', label: 'Services' },
   { id: 'portfolio', label: 'Works' },
-  { id: 'price', label: 'Pricing' },
   { id: 'about', label: 'About' },
-  { id: 'blog', label: 'Blog' },
   { id: 'contact', label: 'Contact' },
 ];
 
@@ -41,8 +39,8 @@ const Topbar = () => {
         className={`navbar navbar-expand-lg fixed-top navbar-custom sticky ${scrollY > 100 ? 'nav-sticky' : ''}`}
       >
         <Container>
-          <Link className="navbar-brand logo" href="/home-1">
-            <Icon icon="mdi-chart-donut-variant" /> Larix
+          <Link className="navbar-brand logo" href="/">
+            Go Traffic
           </Link>
           <button
             className="navbar-toggler"

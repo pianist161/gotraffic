@@ -9,14 +9,18 @@ const Cta = () => {
         <Container>
           <Row className="justify-content-center">
             <Col lg={8}>
-              <h3 className="text-center">Ready to start your next web project now?</h3>
+              <h3 className="text-center">Ready to enhance your transportation system?</h3>
               <p className="cta-desc text-center mt-3">
-                When a good idea comes, you know, part of my job is to move it around, just see what
-                people think, get people talking about it.
+                We're here to streamline your project and deliver results efficiently. Our experienced 
+                team employs innovative strategies and cutting-edge technologies to enhance traffic 
+                management and minimize delays.
               </p>
               <div className="text-center mt-4">
-                <Link href="" className="btn btn-custom">
+                <Link href="#contact" className="btn btn-custom">
                   Get Started
+                </Link>
+                <Link href="#services" className="btn btn-custom-white ms-3">
+                  Our Services
                 </Link>
               </div>
             </Col>

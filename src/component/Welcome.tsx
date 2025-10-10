@@ -11,37 +11,37 @@ type welcomeType = {
 
 const WelcomeData: welcomeType[] = [
   {
-    icon: 'uil-water',
-    title: 'Natural Flow',
-    des: 'Holuptate velit esse moleiae quam nihil consequatur voluptas nulla every pariatur?',
+    icon: 'mdi-traffic-light',
+    title: 'Traffic Signal Systems',
+    des: 'Comprehensive signal timing plans, optimization, and adaptive control systems for enhanced traffic flow and safety.',
   },
   {
-    icon: 'uil-dropbox',
-    title: 'Awesome Design',
-    des: 'Vestibulum mollis nibh interdum aculis proin auctor vulputate facilisis Etiam convallis posuere.',
+    icon: 'mdi-car-multiple',
+    title: 'ITS Project Support',
+    des: 'Intelligent Transportation Systems deployment, system engineering, and advanced traffic management solutions.',
   },
   {
-    icon: 'uil-focus-target',
-    title: 'Easy to customize',
-    des: 'Proin quis elit vitae nisi interdum ullamcorper sit amet eget diam sed non ornare libero.',
+    icon: 'mdi-chart-line',
+    title: 'Traffic Engineering Studies',
+    des: 'Data-driven analysis, simulation modeling, and performance evaluation for optimal transportation solutions.',
   },
 ];
 
 const WelcomeData2: welcomeType[] = [
   {
-    icon: 'uil-fire',
-    title: 'Hot Looks',
-    des: 'Consec tetureu suscipit metorbi dictum nec risus venenatis dictum duty vulputate.',
+    icon: 'mdi-shield-check',
+    title: 'Safety & Efficiency',
+    des: 'Advanced methodologies and cutting-edge technology to enhance safety, efficiency, and mobility.',
   },
   {
-    icon: 'uil-game-structure',
-    title: 'Unrivaled Quality',
-    des: 'Maenas sagittis placerat scele risque tempor Aliquam placerat neque scelerisque consectetur.',
+    icon: 'mdi-cog',
+    title: 'Innovation-Driven',
+    des: 'Leveraging emerging technology and data-driven methodologies for customized traffic management strategies.',
   },
   {
-    icon: 'uil-flower',
-    title: 'Clean Design',
-    des: 'Aliquam dicadtunc senulla congue posuere bibendum erat sit amet tortor finibus.',
+    icon: 'mdi-handshake',
+    title: 'Trusted Partnership',
+    des: 'Dedicated to transforming transportation landscape through collaboration and community engagement.',
   },
 ];
 
@@ -53,10 +53,11 @@ const Welcome = () => {
           <Row className="justify-content-center">
             <Col lg={7}>
               <div className="text-center">
-                <h4 className="title-heading">Our solution for your business</h4>
+                <h4 className="title-heading">About Go Traffic LLC</h4>
                 <p className="title-desc text-muted mt-3">
-                  We craft digital, graphic and dimensional thinking, to create category leading
-                  brand experiences that have meaning and add a value.
+                  An innovation-driven traffic engineering company based in South Florida. We leverage 
+                  emerging technology and advanced methodologies to provide exceptional traffic management 
+                  solutions that enhance safety, efficiency, and mobility.
                 </p>
               </div>
             </Col>

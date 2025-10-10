@@ -17,21 +17,21 @@ type clientType = {
 const clientData: clientType[] = [
   {
     img: client111,
-    title: 'Founder',
-    name: 'Willimore Wilson',
-    des: `"Their separate existence is a myth. For science music sport etc Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language"`,
+    title: 'Transportation Director',
+    name: 'Michael Rodriguez',
+    des: `"Go Traffic's expertise in adaptive signal control has dramatically improved traffic flow throughout our city. Their team's professionalism and innovative approach to traffic management exceeded our expectations. We've seen a 30% reduction in congestion during peak hours."`,
   },
   {
     img: client122,
-    title: 'Ceo',
-    name: 'Charley Brown',
-    des: `"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a normal of letters, as opposed to using making it look like readable English."`,
+    title: 'City Traffic Engineer',
+    name: 'Sarah Thompson',
+    des: `"Working with Go Traffic on our ITS deployment project was exceptional. Their technical knowledge and attention to detail ensured a smooth implementation. The signal timing optimization they provided has significantly improved our network efficiency."`,
   },
   {
     img: client133,
-    title: 'Manager',
-    name: 'Norden Sophie',
-    des: `"Looking for an event WordPress theme? Look no further—we’ve got pre-built websites for over 20 different types of events: birthday party, wedding, course launch, marketing event, conference, seasonal event."`,
+    title: 'Project Manager',
+    name: 'David Chen',
+    des: `"Go Traffic delivered comprehensive traffic engineering studies that were instrumental in our PD&E project approval. Their data-driven approach and clear documentation made the entire process seamless. Highly recommend their services for any transportation project."`,
   },
 ];
 
@@ -48,10 +48,10 @@ const Client = () => {
         <Row className="justify-content-center">
           <Col lg={7}>
             <div className="text-center">
-              <h4 className="title-heading text-uppercase">Testimonial</h4>
+              <h4 className="title-heading text-uppercase">Client Testimonials</h4>
               <p className="title-desc text-muted mt-3">
-                We craft digital, graphic and dimensional thinking, to create category leading brand
-                experiences that have meaning and add a value.
+                Trusted by government agencies and private clients across South Florida. 
+                Our commitment to excellence and innovative solutions has earned us recognition as a leading traffic engineering firm.
               </p>
             </div>
           </Col>

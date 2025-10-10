@@ -29,7 +29,7 @@ const Footer = () => {
             <Col lg={4}>
               <div className="footer-menu">
                 <h3 className="mb-4 text-uppercase text-white">
-                  <Icon icon="mdi-chart-donut-variant" className="mb-1" /> Larix
+                  <Icon icon="mdi-traffic-light" className="mb-1" /> Go Traffic
                 </h3>
                 <p>
                   The Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
@@ -81,7 +81,7 @@ const Footer = () => {
           <Row>
             <Col lg={12}>
               <div className="text-center mt-5">
-                <p className="mb-0">{currentYear} © Larix.</p>
+                <p className="mb-0">{currentYear} © Go Traffic.</p>
               </div>
             </Col>
           </Row>

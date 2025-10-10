@@ -16,7 +16,7 @@ const Hero = () => {
                   <h5 className="home-small-title text-uppercase text-muted mb-4">
                     Awesome Design
                   </h5>
-                  <h2 className="home-title">Starting with Larix is easier than anything</h2>
+                  <h2 className="home-title">Starting with Go Traffic is easier than anything</h2>
                   <p className="home-desc mx-auto mt-3">
                     Maecenas class semper class semper sollicitudin lectus lorem iaculis imperdiet
                     aliquam vehicula tempor auctor curabitur pede aenean ornare.

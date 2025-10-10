@@ -18,23 +18,13 @@ interface TeamMember {
 const teamMembers: TeamMember[] = [
   {
     img: team1,
-    name: 'Wade G. Wilhite',
-    role: 'CEO/Founder',
+    name: 'Dr. Enock',
+    role: 'Managing Partner/President',
   },
   {
     img: team2,
-    name: 'William S. Blay',
-    role: 'CTO/Co-Founder',
-  },
-  {
-    img: team3,
-    name: 'Matthew B. Morales',
-    role: 'Web Designer',
-  },
-  {
-    img: team4,
-    name: 'Luke L. Johnston',
-    role: 'Web Developer',
+    name: 'Dr. Aidin',
+    role: 'Managing Partner/President',
   },
 ];
 
@@ -46,12 +36,12 @@ const Team = () => {
           <Col lg={12}>
             <div className="about-title mx-auto text-center">
               <h2 className="fw-normal">
-                A Digital web studio creating stunning &amp; Engaging online Experiences
+                Meet Our Expert Team
               </h2>
               <p className="text-muted pt-4">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
-                nascetur ridiculus mus. Donec quam felis.
+                Our highly skilled professionals bring extensive experience in traffic engineering, 
+                signal optimization, and intelligent transportation systems. We are committed to 
+                transforming the transportation landscape through innovative solutions and advanced technology.
               </p>
             </div>
           </Col>
@@ -61,40 +51,40 @@ const Team = () => {
           <Col lg={3} className="text-center">
             <div className="text-muted">
               <h3 className="counter-value fw-normal">
-                <CountUp end={128} suffix="+" />
+                <CountUp end={50} suffix="+" />
               </h3>
-              <p>Projects</p>
+              <p>Traffic Projects</p>
             </div>
           </Col>
           <Col lg={3} className="text-center about-border-left">
             <div className="text-muted">
               <h3 className="counter-value fw-normal">
-                <CountUp end={89} />
+                <CountUp end={25} />
               </h3>
-              <p>Clients</p>
+              <p>Signal Systems</p>
             </div>
           </Col>
           <Col lg={3} className="text-center about-border-left">
             <div className="text-muted">
               <h3 className="counter-value fw-normal">
-                <CountUp end={15842} />
+                <CountUp end={15} />
               </h3>
-              <p>Members</p>
+              <p>ITS Deployments</p>
             </div>
           </Col>
           <Col lg={3} className="text-center about-border-left">
             <div className="text-muted">
               <h3 className="counter-value fw-normal">
-                <CountUp end={125} />
+                <CountUp end={100} suffix="%" />
               </h3>
-              <p>Employee</p>
+              <p>Client Satisfaction</p>
             </div>
           </Col>
         </Row>
 
-        <Row className="mt-5">
+        <Row className="mt-5 justify-content-center">
           {teamMembers.map((member, index) => (
-            <Col lg={3} key={index}>
+            <Col lg={4} key={index}>
               <div className="mt-3 text-center">
                 <Image
                   src={member.img}

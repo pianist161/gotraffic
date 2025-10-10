@@ -9,7 +9,7 @@ const rubik = Rubik({
 });
 
 export const metadata: Metadata = {
-  title: 'Larix - Responsive One Page NextJS Template'
+  title: 'Go Traffic - Responsive One Page NextJS Template'
 };
 
 export default function RootLayout({
