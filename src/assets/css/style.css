@@ -327,7 +327,7 @@ p {
 }
 
 .bg-home-2 {
-  background-image: url('../images/home/home-bg-3.jpg');
+  background-color: #f8f9fa;
   background-size: cover;
   background-position: center center;
 }
@@ -473,8 +473,8 @@ p {
 }
 
 .home-title {
-  font-size: 56px;
-  line-height: 70px;
+  font-size: 42px;
+  line-height: 54px;
   font-weight: 700;
 }
 
@@ -837,9 +837,7 @@ p {
 }
 
 .bg-cta {
-  background-image: url('../images/home/home-bg-3.jpg');
-  background-size: cover;
-  background-position: center center;
+  background-color: #f8f9fa;
   position: relative;
 }
 
@@ -1148,5 +1146,30 @@ textarea.form-control {
 @media (max-height: 767px) {
   .clients-img {
     top: 7px;
+  }
+}
+
+/************************
+    Video Section
+*************************/
+
+.video-container {
+  transition: box-shadow 0.3s ease;
+}
+
+.video-container video {
+  pointer-events: none;
+}
+
+/* Mobile responsive for video section */
+@media (max-width: 768px) {
+  .video-container {
+    border-radius: 5px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-container {
+    padding-bottom: 75% !important; /* 4:3 aspect ratio for mobile */
   }
 }

@@ -6,6 +6,7 @@ import Topbar from '@/component/layout/Topbar/page';
 import Portfolio from '@/component/Portfolio';
 import Team from '@/component/Team';
 import Welcome from '@/component/Welcome';
+import VideoSection from '@/component/VideoSection';
 import Hero from './components/Hero';
 
 const Page = () => {
@@ -15,6 +16,7 @@ const Page = () => {
       <Hero />
       <Welcome />
       <Portfolio />
+      <VideoSection />
       <Client />
       <Team />
       <Cta />
