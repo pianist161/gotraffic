@@ -54,7 +54,7 @@ const Hero = () => {
                   fontFamily: "'Rubik', sans-serif"
                 }}
               >
-                Delivering advanced traffic signal systems and intelligent transportation solutions to enhance safety, efficiency, and mobility across South Florida.
+                Delivering advanced intelligent transportation solutions to enhance safety, efficiency, and mobility.
               </p>
             </div>
           </div>

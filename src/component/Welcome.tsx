@@ -11,37 +11,19 @@ type welcomeType = {
 
 const WelcomeData: welcomeType[] = [
   {
-    icon: 'mdi-traffic-light',
-    title: 'Traffic Signal Systems',
-    des: 'Comprehensive signal timing plans, optimization, and adaptive control systems for enhanced traffic flow and safety.',
+    icon: 'mdi-target',
+    title: 'Mission',
+    des: 'At Go Traffic LLC, our mission is to enhance transportation systems through innovative, data-driven engineering solutions that prioritize safety, efficiency, and mobility. By leveraging advanced technology and fostering collaboration with clients and communities, we deliver customized traffic management strategies that create smarter, safer, and more sustainable transportation networks across South Florida and beyond.',
   },
   {
-    icon: 'mdi-car-multiple',
-    title: 'ITS Project Support',
-    des: 'Intelligent Transportation Systems deployment, system engineering, and advanced traffic management solutions.',
+    icon: 'mdi-eye',
+    title: 'Vision',
+    des: 'Our vision is to be a recognized leader in intelligent transportation engineering, driving the evolution of safe, efficient, and connected mobility systems. We aspire to shape the future of transportation by integrating innovation, sustainability, and community partnership, setting new standards for how people and goods move through growing urban environments.',
   },
   {
-    icon: 'mdi-chart-line',
-    title: 'Traffic Engineering Studies',
-    des: 'Data-driven analysis, simulation modeling, and performance evaluation for optimal transportation solutions.',
-  },
-];
-
-const WelcomeData2: welcomeType[] = [
-  {
-    icon: 'mdi-shield-check',
-    title: 'Safety & Efficiency',
-    des: 'Advanced methodologies and cutting-edge technology to enhance safety, efficiency, and mobility.',
-  },
-  {
-    icon: 'mdi-cog',
-    title: 'Innovation-Driven',
-    des: 'Leveraging emerging technology and data-driven methodologies for customized traffic management strategies.',
-  },
-  {
-    icon: 'mdi-handshake',
-    title: 'Trusted Partnership',
-    des: 'Dedicated to transforming transportation landscape through collaboration and community engagement.',
+    icon: 'mdi-bullseye-arrow',
+    title: 'Goal',
+    des: 'The goal of Go Traffic LLC is to advance transportation infrastructure by applying cutting-edge technology and innovative methodologies to deliver exceptional traffic management solutions tailored to each project\'s unique needs. We strive to optimize mobility, reduce congestion, and enhance roadway safety, transforming the transportation landscape of South Florida and beyond through engineering excellence and forward-thinking design.',
   },
 ];
 
@@ -68,23 +50,6 @@ const Welcome = () => {
                 <div className="features-box mt-4">
                   <div className="d-flex">
                     <div className="features-icon d-flex justify-content-center align-items-center text-center flex-shrink-0 ">
-                      <Icon icon={item.icon} />
-                    </div>
-                    <div className="flex-grow-1 ms-4">
-                      <h5 className="mt-0 f-19">{item.title}</h5>
-                      <p className="text-muted">{item.des}</p>
-                    </div>
-                  </div>
-                </div>
-              </Col>
-            ))}
-          </Row>
-          <Row className="pt-3">
-            {WelcomeData2.map((item, idx) => (
-              <Col key={idx} lg={4}>
-                <div className="features-box mt-4">
-                  <div className="d-flex">
-                    <div className="features-icon d-flex justify-content-center align-items-center text-center flex-shrink-0">
                       <Icon icon={item.icon} />
                     </div>
                     <div className="flex-grow-1 ms-4">

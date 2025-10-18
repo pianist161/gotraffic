@@ -1173,3 +1173,81 @@ textarea.form-control {
     padding-bottom: 75% !important; /* 4:3 aspect ratio for mobile */
   }
 }
+
+/************************
+    Services Section
+*************************/
+
+.services-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+  margin-bottom: 30px;
+}
+
+.services-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.services-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 32px;
+  margin: 0 auto;
+}
+
+.services-title {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.services-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.services-features h6 {
+  color: #007bff;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.services-features ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.services-features ul li svg {
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+/* Mobile responsive for services */
+@media (max-width: 768px) {
+  .services-box {
+    padding: 20px;
+  }
+  
+  .services-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+  
+  .services-title {
+    font-size: 20px;
+  }
+}
