@@ -11,7 +11,7 @@ const Hero = () => {
           playsInline
           className="video-background"
         >
-          <source src="/videos/city video.mp4" type="video/mp4" />
+          <source src="/videos/video_3.mp4" type="video/mp4" />
         </video>
         <div className="home-center">
           <div className="home-desc-center">

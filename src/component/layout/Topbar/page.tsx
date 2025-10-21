@@ -9,8 +9,6 @@ import useScrollEvent from '@/hooks/useScrollEvent';
 const sections = [
   { id: 'home', label: 'Home' },
   { id: 'service', label: 'Services' },
-  { id: 'portfolio', label: 'Works' },
-  { id: 'video', label: 'Video' },
   { id: 'about', label: 'About' },
   { id: 'contact', label: 'Contact' },
 ];

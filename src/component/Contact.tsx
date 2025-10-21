@@ -1,7 +1,49 @@
-import React from 'react';
+'use client';
+
+import React, { useState, useEffect } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { initEmailJS, sendEmail } from '@/lib/emailjs';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState('');
+
+  // Инициализация EmailJS при загрузке компонента
+  useEffect(() => {
+    initEmailJS();
+  }, []);
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus('');
+
+    try {
+      await sendEmail(formData);
+      setSubmitStatus('success');
+      setFormData({ name: '', email: '', subject: '', message: '' });
+    } catch (error) {
+      console.error('Error sending message:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <>
       <section className="section" id="contact">
@@ -55,8 +97,17 @@ const Contact = () => {
                 </Col>
                 <Col lg={8}>
                   <div className="custom-form">
-                    <form method="post" className="contact-form" name="myForm" id="myForm">
-                      <span id="error-msg" />
+                    <form onSubmit={handleSubmit} className="contact-form" name="myForm" id="myForm">
+                      {submitStatus === 'success' && (
+                        <div className="alert alert-success" role="alert">
+                          Thank you! Your message has been sent successfully.
+                        </div>
+                      )}
+                      {submitStatus === 'error' && (
+                        <div className="alert alert-danger" role="alert">
+                          Sorry, there was an error sending your message. Please try again.
+                        </div>
+                      )}
                       <Row className="g-3">
                         <Col lg={6}>
                           <div className="form-group">
@@ -66,6 +117,9 @@ const Contact = () => {
                               type="text"
                               className="form-control"
                               placeholder="Your name..."
+                              value={formData.name}
+                              onChange={handleInputChange}
+                              required
                             />
                           </div>
                         </Col>
@@ -77,41 +131,50 @@ const Contact = () => {
                               type="email"
                               className="form-control"
                               placeholder="Your email..."
+                              value={formData.email}
+                              onChange={handleInputChange}
+                              required
                             />
                           </div>
                         </Col>
                         <Col lg={12}>
                           <div className="form-group">
                             <input
-                              name="text"
+                              name="subject"
                               id="sub"
                               type="text"
                               className="form-control"
                               placeholder="Your subject..."
+                              value={formData.subject}
+                              onChange={handleInputChange}
+                              required
                             />
                           </div>
                         </Col>
                         <Col lg={12}>
                           <div className="form-group">
                             <textarea
-                              name="comments"
+                              name="message"
                               id="comments"
                               rows={4}
                               className="form-control"
                               placeholder="Your message..."
-                              defaultValue={''}
+                              value={formData.message}
+                              onChange={handleInputChange}
+                              required
                             />
                           </div>
                         </Col>
                         <Col lg={12}>
-                          <input
+                          <button
                             type="submit"
                             id="submit"
                             name="send"
                             className="submitBnt btn btn-custom"
-                            defaultValue="Send Message"
-                          />
-                          <div id="simple-msg" />
+                            disabled={isSubmitting}
+                          >
+                            {isSubmitting ? 'Sending...' : 'Send Message'}
+                          </button>
                         </Col>
                       </Row>
                     </form>
